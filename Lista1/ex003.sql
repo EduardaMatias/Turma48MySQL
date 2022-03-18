@@ -18,10 +18,10 @@ use db_eastHigh;
 CREATE TABLE tb_alunos(
 	id bigint auto_increment,
 	nome varchar(255),
-    matricula varchar(255),
+    	matricula varchar(255),
 	cpf varchar(11),
-    email varchar(255),
-    nota double,
+   	email varchar(255),
+	nota double,
 
 	primary key(id)
 );
