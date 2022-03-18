@@ -17,11 +17,11 @@ USE db_google;
 
 CREATE TABLE tb_funcionario(
 	id bigint auto_increment,
-    nome varchar(255),
-    cpf varchar(11),
-    cargo varchar(255),
-    dataFiliacao date,
-    salario double,
+        nome varchar(255),
+        cpf varchar(11),
+        cargo varchar(255),
+    	dataFiliacao date,
+    	salario double,
     
     primary key(id)
 );
