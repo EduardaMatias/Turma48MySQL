@@ -25,32 +25,32 @@ CREATE TABLE tb_estoque(
     primary key(id)
 );
 
-insert into tb_estoque(nome, tipo, marca, quantidade, preco)
-values ("Mouse sem fio", "Computadores e informática", "Multilaser", 45, 33.50);
+INSERT INTO tb_estoque(nome, tipo, marca, quantidade, preco)
+VALUES ("Mouse sem fio", "Computadores e informática", "Multilaser", 45, 33.50);
 
-insert into tb_estoque(nome, tipo, marca, quantidade, preco)
-values ("WebCam Full HD", "Computadores e informática", "Logitech", 25, 459.99);
+INSERT INTO tb_estoque(nome, tipo, marca, quantidade, preco)
+VALUES ("WebCam Full HD", "Computadores e informática", "Logitech", 25, 459.99);
 
-insert into tb_estoque(nome, tipo, marca, quantidade, preco)
-values ("Parafusadeira furadeira", "Ferramentas elétricas e manuais", "Bosch", 25, 314.90);
+INSERT INTO tb_estoque(nome, tipo, marca, quantidade, preco)
+VALUES ("Parafusadeira furadeira", "Ferramentas elétricas e manuais", "Bosch", 25, 314.90);
 
-insert into tb_estoque(nome, tipo, marca, quantidade, preco)
-values ("Barraca portátil Dinossauro", "Barracas infantis", "Kopeck", 115, 83.90);
+INSERT INTO tb_estoque(nome, tipo, marca, quantidade, preco)
+VALUES ("Barraca portátil Dinossauro", "Barracas infantis", "Kopeck", 115, 83.90);
 
-insert into tb_estoque(nome, tipo, marca, quantidade, preco)
-values ("Dinossauro Jurassic World", "Bonecos e figuras de ação", "Mattel", 50, 71.99);
+INSERT INTO tb_estoque(nome, tipo, marca, quantidade, preco)
+VALUES ("Dinossauro Jurassic World", "Bonecos e figuras de ação", "Mattel", 50, 71.99);
 
-insert into tb_estoque(nome, tipo, marca, quantidade, preco)
-values ("Nintendo Switch", "Games e console", "Nintendo", 80, 1739.99);
+INSERT INTO tb_estoque(nome, tipo, marca, quantidade, preco)
+VALUES ("Nintendo Switch", "Games e console", "Nintendo", 80, 1739.99);
 
-insert into tb_estoque(nome, tipo, marca, quantidade, preco)
-values ("Body", "Biquinis e maiôs", "Empress Brasil", 280, 225.00);
+INSERT INTO tb_estoque(nome, tipo, marca, quantidade, preco)
+VALUES ("Body", "Biquinis e maiôs", "Empress Brasil", 280, 225.00);
 
-insert into tb_estoque(nome, tipo, marca, quantidade, preco)
-values ("Ração sabor frango", "Pet shop", "Premier pet", 50, 137.17);
+INSERT INTO tb_estoque(nome, tipo, marca, quantidade, preco)
+VALUES ("Ração sabor frango", "Pet shop", "Premier pet", 50, 137.17);
 
-select * from tb_estoque;
-select * from tb_estoque where preco > 500;
-select * from tb_estoque where preco < 500;
+SELECT * FROM tb_estoque;
+SELECT * FROM tb_estoque WHERE preco > 500;
+SELECT * FROM tb_estoque WHERE preco < 500;
 
-update tb_estoque set preco = 1500 where id = 6;
+UPDATE tb_estoque SET preco = 1500 WHERE id = 6;
