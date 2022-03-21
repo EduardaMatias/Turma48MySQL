@@ -26,23 +26,23 @@ CREATE TABLE tb_funcionario(
     primary key(id)
 );
 
-insert into tb_funcionario (nome,cpf, cargo, dataFiliacao, salario) 
-values ("Paula Martins", "58477759812", "Dev Júnior", "2021-09-05", 1550);
+INSERT INTO tb_funcionario (nome,cpf, cargo, dataFiliacao, salario) 
+VALUES ("Paula Martins", "58477759812", "Dev Júnior", "2021-09-05", 1550);
 
-insert into tb_funcionario (nome,cpf, cargo, dataFiliacao, salario) 
-values ("Luiz Henrique", "58465784215", "Dev Pleno", "2018-08-02", 4500);
+INSERT INTO tb_funcionario (nome,cpf, cargo, dataFiliacao, salario) 
+VALUES ("Luiz Henrique", "58465784215", "Dev Pleno", "2018-08-02", 4500);
 
-insert into tb_funcionario (nome,cpf, cargo, dataFiliacao, salario) 
-values ("Mateus Henrique", "25848695715", "Estagiario", "2022-01-05", 900);
+INSERT INTO tb_funcionario (nome,cpf, cargo, dataFiliacao, salario) 
+VALUES ("Mateus Henrique", "25848695715", "Estagiario", "2022-01-05", 900);
 
-insert into tb_funcionario (nome,cpf, cargo, dataFiliacao, salario) 
-values ("Jessica Silva", "12545878965", "Dev Sênior", "2014-06-02", 8500);
+INSERT INTO tb_funcionario (nome,cpf, cargo, dataFiliacao, salario) 
+VALUES ("Jessica Silva", "12545878965", "Dev Sênior", "2014-06-02", 8500);
 
-insert into tb_funcionario (nome,cpf, cargo, dataFiliacao, salario) 
-values ("João Vitor", "25847896515", "Estagiario", "2022-01-05", 900);
+INSERT INTO tb_funcionario (nome,cpf, cargo, dataFiliacao, salario) 
+VALUES ("João Vitor", "25847896515", "Estagiario", "2022-01-05", 900);
 
-select * from tb_funcionario;
-select * from tb_funcionario where salario > 2000;
-select * from tb_funcionario where salario < 2000;
+SELECT * FROM tb_funcionario;
+SELECT * FROM tb_funcionario WHERE salario > 2000;
+SELECT * FROM tb_funcionario WHERE salario < 2000;
 
-update tb_funcionario set cargo = "Dev Júnior", salario = 1550 where id = 3;
+UPDATE tb_funcionario SET cargo = "Dev Júnior", salario = 1550 WHERE id = 3;
