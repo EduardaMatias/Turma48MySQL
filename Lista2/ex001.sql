@@ -72,5 +72,5 @@ SELECT * FROM tb_personagem
 INNER JOIN tb_classe ON tb_classe.id = tb_personagem.id;
 
 SELECT * FROM tb_personagem
-INNER JOIN tb_classe on tb_personagem.classe_id = tb_classe.id
+INNER JOIN tb_classe ON tb_personagem.classe_id = tb_classe.id
 WHERE classe_id = 3;
