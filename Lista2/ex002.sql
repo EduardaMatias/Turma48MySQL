@@ -4,8 +4,8 @@ USE db_pizzaria_legal;
 
 CREATE TABLE tb_categoria(
 	id bigint auto_increment,
-    nome varchar(255),
-    tipo varchar(255),
+        nome varchar(255),
+    	tipo varchar(255),
 	ingredientes varchar(255),
     
 	primary key(id)
@@ -13,15 +13,15 @@ CREATE TABLE tb_categoria(
 
 CREATE TABLE tb_pizza(
 	id bigint auto_increment,
-    tamanho varchar(255),
-    quantidade varchar(255),
-    preco double,
-    endereco varchar(255), 
-    cliente varchar(255),
-    categoria_id bigint,
+    	tamanho varchar(255),
+    	quantidade varchar(255),
+    	preco double,
+    	endereco varchar(255), 
+    	cliente varchar(255),
+    	categoria_id bigint,
     
 	primary key(id),
-    foreign key (categoria_id) references tb_categoria(id)
+    	foreign key (categoria_id) references tb_categoria(id)
 );
 
 SELECT * FROM tb_pizza;
