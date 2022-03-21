@@ -16,11 +16,11 @@ use db_amazon;
 
 CREATE TABLE tb_estoque(
 	id bigint auto_increment,
-    nome varchar(255),
-    tipo varchar(255),
-    marca varchar(255),
-    quantidade int,
-    preco double,
+   	nome varchar(255),
+    	tipo varchar(255),
+    	marca varchar(255),
+    	quantidade int,
+    	preco double,
 	
     primary key(id)
 );
