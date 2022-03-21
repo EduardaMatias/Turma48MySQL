@@ -18,7 +18,7 @@ CREATE TABLE tb_personagem(
 	id bigint auto_increment,
 	nome varchar(255),
     	raca varchar(255),
-   	 vida int, 
+   	vida int, 
     	defesa int,
     	ataque int, 
 	classe_id bigint,
