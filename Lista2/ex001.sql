@@ -7,7 +7,7 @@ CREATE TABLE tb_classe(
 	nivel int,
 	classe varchar(255),
 	habilidade varchar(255),
-    arma varchar(255),
+        arma varchar(255),
     
 	primary key(id)
 );
@@ -17,14 +17,14 @@ SELECT * FROM tb_classe;
 CREATE TABLE tb_personagem(
 	id bigint auto_increment,
 	nome varchar(255),
-    raca varchar(255),
-    vida int, 
-    defesa int,
-    ataque int, 
+    	raca varchar(255),
+   	 vida int, 
+    	defesa int,
+    	ataque int, 
 	classe_id bigint,
     
 	primary key(id),
-    foreign key (classe_id) references tb_classe(id)
+    	foreign key (classe_id) references tb_classe(id)
 );
 
 SELECT * FROM tb_personagem;
