@@ -65,7 +65,7 @@ SELECT * FROM tb_pizza WHERE preco >= 29 AND preco <= 60;
 SELECT * FROM tb_categoria WHERE nome LIKE "%c%";
 
 SELECT * FROM tb_categoria
-INNER JOIN tb_pizza ON tb_categoria.id = tb_pizza.id;
+INNER JOIN tb_pizza ON tb_categoria.id = tb_pizza.categoria_id;
 
 SELECT * FROM tb_pizza
 INNER JOIN tb_categoria ON tb_pizza.id = tb_categoria.id
