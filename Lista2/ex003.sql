@@ -68,7 +68,7 @@ SELECT * FROM tb_produto WHERE preco >= 3 AND preco <= 60;
 SELECT * FROM tb_produto WHERE nome LIKE "%b%";
 
 SELECT * FROM tb_produto
-INNER JOIN tb_categoria WHERE tb_categoria.id = tb_produto.id;
+INNER JOIN tb_categoria WHERE tb_categoria.id = tb_produto.categoria_id;
 
 SELECT * FROM tb_produto
 INNER JOIN tb_categoria ON tb_produto.categoria_id = tb_categoria.id
