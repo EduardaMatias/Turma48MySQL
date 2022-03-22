@@ -5,7 +5,7 @@ USE db_farmacia_do_bem;
 CREATE TABLE tb_categoria(
 	id bigint auto_increment,
 	setor varchar(255),
-    receita boolean, /*verifica se é necessário receita para a compra do produto*/
+    	receita boolean, /*verifica se é necessário receita para a compra do produto*/
 	marca varchar(255),
     
 	primary key(id)
@@ -13,15 +13,15 @@ CREATE TABLE tb_categoria(
 
 CREATE TABLE tb_produto(
 	id bigint auto_increment,
-    nome varchar(255),
-    preco double,
-    quantidadeEstoque int, 
-    codigo varchar(255),
-    advertencias varchar(255),
+    	nome varchar(255),
+    	preco double,
+    	quantidadeEstoque int, 
+    	codigo varchar(255),
+   	advertencias varchar(255),
     
-    categoria_id bigint,
-    primary key(id),
-    foreign key (categoria_id) references tb_categoria(id)
+    	categoria_id bigint,
+    	primary key(id),
+    	foreign key (categoria_id) references tb_categoria(id)
 );
 
 INSERT INTO tb_categoria (setor, receita, marca)
