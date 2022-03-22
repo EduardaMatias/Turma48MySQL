@@ -67,3 +67,7 @@ SELECT * FROM tb_produto WHERE preco_por_kg >= 3 AND preco_por_kg <=60;
 
 SELECT * FROM tb_produto
 INNER JOIN tb_categoria ON tb_categoria.id = tb_produto.categoria_id;
+
+SELECT * FROM tb_produto
+INNER JOIN tb_categoria ON tb_produto.categoria_id = tb_categoria.id
+WHERE categoria_id = 4;
